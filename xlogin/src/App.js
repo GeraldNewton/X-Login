@@ -24,7 +24,7 @@ function App() {
             <input type="text" name="Username" required />
           </>
           <>
-            <label label="pass">password: </label>
+            <label label="Password">password: </label>
             <input type="password" name="Password" required />
           </>
           <button type="submit" style={{ width: "30%" }}>
