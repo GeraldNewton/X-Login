@@ -20,16 +20,16 @@ function App() {
           style={{ display: "flex", flexDirection: "column", width: "200px" }}
         >
           <>
-            <label htmlFor="Username">username: </label>
+            <label label="Username">username: </label>
             <input type="text" name="Username" required />
           </>
           <>
-            <label htmlFor="pass">password: </label>
+            <label label="pass">password: </label>
             <input type="password" name="Password" required />
           </>
           <button type="submit" style={{ width: "30%" }}>
             Submit
-          </button>
+          </button>label
         </form>
       ) : (
         <>
