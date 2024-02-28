@@ -29,7 +29,7 @@ function App() {
           </>
           <button type="submit" style={{ width: "30%" }}>
             Submit
-          </button>label
+          </button>
         </form>
       ) : (
         <>
