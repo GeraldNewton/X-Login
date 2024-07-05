@@ -12,29 +12,28 @@ function App() {
   };
   return (
     <>
-      <h1>Login</h1>
+      <h1>Login Page</h1>
       {error && <p>Invalid username or password</p>}
       {display === "form" ? (
         <form
           onSubmit={handleForm}
-          style={{ display: "flex", flexDirection: "column", width: "200px" }}
+          // style={{ display: "flex", flexDirection: "column", width: "200px" }}
         >
-          <>
-            <label for="Username">username: </label>
-            <input type="text" name="Username" required id="Username"/>
-          </>
-          <>
-            <label for="Password">password: </label>
-            <input type="password" name="Password" required id="Password"/>
-          </>
-          <button type="submit" style={{ width: "30%" }}>
+          <div>
+            <label for="Username">Username: </label>
+            <input type="text" name="Username" required id="Username" placeholder="username"/>
+          </div>
+          <div>
+            <label for="Password">Password: </label>
+            <input type="password" name="Password" required id="Password" placeholder="password"/>
+          </div>
+          <button type="submit">
             Submit
           </button>
         </form>
       ) : (
         <>
           <p>Welcome, user!</p>
-          <button onClick={() => setDisplay("form")}>Go Back</button>
         </>
       )}
     </>
