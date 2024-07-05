@@ -17,7 +17,6 @@ function App() {
       {display === "form" ? (
         <form
           onSubmit={handleForm}
-          // style={{ display: "flex", flexDirection: "column", width: "200px" }}
         >
           <div>
             <label for="Username">Username: </label>
